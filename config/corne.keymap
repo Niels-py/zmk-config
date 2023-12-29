@@ -27,14 +27,14 @@
                 };
                 lower_layer {
 // -----------------------------------------------------------------------------------------
-// |      |     |  -  |  [  |  \  |     |       |     |  `  |  ]  |  =  |     |      |
-// |      |  1  |  2  |  3  |  4  |  5  |       |  6  |  7  |  8  |  9  |  0  |      |
-// |      |     |     |     |     |     |       |     |     |     |     |     |      |
-//                    |     |     |     |       |     |     |     |
+// |      |     |  -  |  [  |  \  |     |       |       |  `   |  ]  |   =   |     |      |
+// |      |  1  |  2  |  3  |  4  |  5  |       |    6  |  7   |  8  |   9   |  0  |      |
+// |      |     |     |     |     |     |       |  LEFT | DOWN | UP  | RIGHT |     |      |
+//                    |     |     |     |       |       |      |     |
                         bindings = <
-   &trans &trans &kp MINUS &kp LBKT &kp BSLH &trans     &trans &kp GRAVE &kp RBKT &kp EQUAL &trans &trans
-   &bt    &bt N1 &bt B2    &bt B3   &bt B4   &bt B5     &kp N6 &kp N7    &kp N8   &kp N9    &kp N0 &trans
-   &trans &trans &trans    &trans   &trans   &trans     &trans &trans    &trans   &trans    &trans &trans
+   &trans &trans &kp MINUS &kp LBKT &kp BSLH &trans     &trans   &kp GRAVE &kp RBKT &kp EQUAL &trans &trans
+   &bt    &bt N1 &bt B2    &bt B3   &bt B4   &bt B5     &kp N6   &kp N7    &kp N8   &kp N9    &kp N0 &trans
+   &trans &trans &trans    &trans   &trans   &trans     &kp LEFT &kp DOWN  &kp UP   &kp RIGHT &trans &trans
                            &trans   &trans   &trans     &trans &trans    &trans
                           >;
                 };
