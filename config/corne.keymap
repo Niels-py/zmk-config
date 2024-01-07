@@ -8,17 +8,18 @@
 
                 default_layer {
                         bindings = <
-   &kp ESC   &kp Q &kp W &kp E   &kp R &kp T        &kp Y     &kp U  &kp I     &kp O   &kp P    &kp SQT
-   &kp TAB   &kp A &kp S &kp D   &kp F &kp G        &kp H     &kp J  &kp K     &kp L   &kp SEMI &kp BSPC
-   &kp LCTRL &kp Z &kp X &kp C   &kp V &kp B        &kp N     &kp M  &kp COMMA &kp DOT &kp FSLH &kp LALT
-                   &mo 2 &kp GUI &kp LSHIFT         &kp SPACE &kp RET &mo 1
+   &kp ESC   &kp Q &kp W &kp E    &kp R &kp T        &kp Y     &kp U  &kp I     &kp O   &kp P    &kp SQT
+   &kp TAB   &kp A &kp S &kp D    &kp F &kp G        &kp H     &kp J  &kp K     &kp L   &kp SEMI &kp BSPC
+   &kp LCTRL &kp Z &kp X &kp C    &kp V &kp B        &kp N     &kp M  &kp COMMA &kp DOT &kp FSLH &kp LALT
+                   &mo 2 &kp LGUI &kp LSHIFT         &kp SPACE &kp RET &mo 1
                         >;
                 };
+
                 lower_layer {
                         bindings = <
    &trans &trans &kp MINUS  &kp LBKT &kp BSLH   &trans     &trans   &kp GRAVE &kp RBKT   &kp EQUAL    &trans       &trans
    &trans &kp N1 &kp N2     &kp N3   &kp N4     &kp N5     &kp N6   &kp N7    &kp N8     &kp N9       &kp N0       &trans
-   &trans &trans &kp C_PREV &kp C_PP &kp C_NEXT &trans     &kp LEFT &trans    &kp C_MUTE &kp C_VOL_UP &kp C_VOL_DN &trans
+   &trans &trans &kp C_PREV &kp C_PP &kp C_NEXT &trans     &trans   &trans    &kp C_MUTE &kp C_VOL_DN &kp C_VOL_UP &trans
                             &trans   &trans     &trans     &trans   &trans    &trans
                           >;
                 };
