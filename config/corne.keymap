@@ -12,17 +12,22 @@
 
         umlaut_oe {
             bindings = <&kp RA(P)>;
-            key-positions = <38 7>;
+            key-positions = <38 9>;
         };
 
         umlaut_ue {
             bindings = <&kp RA(Y)>;
-            key-positions = <38 9>;
+            key-positions = <38 7>;
         };
 
         sharp_s {
             bindings = <&kp RA(S)>;
             key-positions = <38 14>;
+        };
+
+        Euro {
+            bindings = <&kp RA(NUMBER_4)>;
+            key-positions = <38 3>;
         };
     };
 
