@@ -26,7 +26,7 @@
         };
 
         Euro {
-            bindings = <&kp RA(NUMBER_4)>;
+            bindings = <&kp RA(NUMBER_5)>;
             key-positions = <38 3>;
         };
     };
