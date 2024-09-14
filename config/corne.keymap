@@ -4,9 +4,14 @@
 / {
     combos {
         compatible = "zmk,combos";
-        combo_RALT = {
+        combo_RALT_1 = {
             timeout-ms = <50>;
             key-positions = <36 41>;
+            bindings = <&kp RALT>;
+        };
+        combo_RALT_2 = {
+            timeout-ms = <50>;
+            key-positions = <35 36>;
             bindings = <&kp RALT>;
         };
         combo_CTRL = {
@@ -15,6 +20,7 @@
             bindings = <&kp LCTRL>;
         };
     };
+
     keymap {
         compatible = "zmk,keymap";
 
