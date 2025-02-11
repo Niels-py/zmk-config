@@ -1,24 +1,27 @@
 #include <behaviors.dtsi>
-#include <dt-bindings/zmk/keys.h>
 #include <dt-bindings/zmk/bt.h>
+#include <dt-bindings/zmk/keys.h>
 
 / {
     combos {
         compatible = "zmk,combos";
-        combo_RALT_1 {
+
+        CTRL {
             timeout-ms = <200>;
             key-positions = <36 41>;
-            bindings = <&kp RALT>;
+            bindings = <&kp LCTRL>;
         };
-        combo_RALT_2 {
+
+        L_ALT {
             timeout-ms = <200>;
-            key-positions = <35 36>;
-            bindings = <&kp RALT>;
+            key-positions = <41 37>;
+            bindings = <&kp LALT>;
         };
-        combo_CTRL {
+
+        R_ALT {
             timeout-ms = <200>;
             key-positions = <36 40>;
-            bindings = <&kp LCTRL>;
+            bindings = <&kp RALT>;
         };
     };
 
@@ -29,17 +32,17 @@
             bindings = <
 &kp ESC    &kp Q  &kp W  &kp E  &kp R     &kp T        &kp Y       &kp U    &kp I      &kp O    &kp P     &kp SQT
 &kp TAB    &kp A  &kp S  &kp D  &kp F     &kp G        &kp H       &kp J    &kp K      &kp L    &kp SEMI  &kp BSPC
-&kp LCTRL  &kp Z  &kp X  &kp C  &kp V     &kp B        &kp N       &kp M    &kp COMMA  &kp DOT  &kp FSLH  &kp LALT
+&kp LCTRL  &kp Z  &kp X  &kp C  &kp V     &kp B        &kp N       &kp M    &kp COMMA  &kp DOT  &kp FSLH  &mo 3
                          &mo 1  &kp LGUI  &kp SPACE    &kp LSHIFT  &kp RET  &mo 2
             >;
         };
 
         lower_layer {
             bindings = <
-&trans  &trans  &kp MINUS   &kp LBKT  &kp BSLH    &trans    &trans  &kp GRAVE  &kp RBKT    &kp EQUAL     &trans        &trans
-&trans  &kp N1  &kp N2      &kp N3    &kp N4      &kp N5    &kp N6  &kp N7     &kp N8      &kp N9        &kp N0        &trans
-&trans  &trans  &kp C_PREV  &kp C_PP  &kp C_NEXT  &trans    &trans  &trans     &kp C_MUTE  &kp C_VOL_DN  &kp C_VOL_UP  &trans
-                            &trans    &trans      &trans    &trans  &trans     &trans
+&trans  &trans  &kp GRAVE   &kp BSLH  &kp LBKT    &trans    &trans  &kp RBKT  &kp MINUS   &kp EQUAL     &trans        &trans
+&trans  &kp N1  &kp N2      &kp N3    &kp N4      &kp N5    &kp N6  &kp N7    &kp N8      &kp N9        &kp N0        &trans
+&trans  &trans  &kp C_PREV  &kp C_PP  &kp C_NEXT  &trans    &trans  &trans    &kp C_MUTE  &kp C_VOL_DN  &kp C_VOL_UP  &trans
+                            &trans    &trans      &trans    &trans  &trans    &trans
             >;
         };
 
@@ -49,6 +52,15 @@
 &trans  &kp HOME  &kp END  &kp PG_UP  &kp PG_DN  &trans     &kp LEFT  &kp DOWN  &kp UP   &kp RIGHT  &trans   &trans
 &trans  &kp F11   &kp F12  &kp F13    &kp F14    &kp F15    &kp F16   &kp F17   &kp F18  &kp F19    &kp F20  &trans
                            &trans     &trans     &trans     &trans    &trans    &trans
+            >;
+        };
+
+        bluetooth_layer {
+            bindings = <
+&none  &bt BT_DISC 0  &bt BT_DISC 1  &bt BT_DISC 2  &bt BT_DISC 3  &bt BT_DISC 4    &none  &none  &none  &none  &none  &none
+&none  &bt BT_SEL 0   &bt BT_SEL 1   &bt BT_SEL 2   &bt BT_SEL 3   &bt BT_SEL 4     &none  &none  &none  &none  &none  &none
+&none  &none          &bt BT_PRV     &bt BT_CLR     &bt BT_NXT     &none            &none  &none  &none  &none  &none  &none
+                                     &none          &none          &none            &none  &none  &none
             >;
         };
     };
